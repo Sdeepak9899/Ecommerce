@@ -1,0 +1,76 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/** @format */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-item {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.plus-jakarta-sans {
+  font-family: 'Plus Jakarta Sans', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.slick-arrow {
+  /* background-color: red !important; */
+  height: 20px !important;
+  width: 20px !important;
+  font-size: 30px;
+}
+
+/** @format */
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  bottom: -40px; /* Adjust this value as needed */
+  transform: translateX(50%);
+}
+
+.slick-prev {
+  left: 0%;
+  transform: translate(0, 0);
+  translate: 50px;
+  opacity: 1;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 50%;
+  transform: translate(50%, 0);
+  translate: -50px;
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: blue !important;
+  font-size: 30px;
+}
+
+/* slick-arrow slick-prev */
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */

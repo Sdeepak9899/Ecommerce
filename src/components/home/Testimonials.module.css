@@ -1,0 +1,14 @@
+/** @format */
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.slider_container {
+  height: calc(100vh - 96px);
+}
+
+.slider_title:nth-last-child(2) {
+  -webkit-text-stroke: 1px black;
+}
